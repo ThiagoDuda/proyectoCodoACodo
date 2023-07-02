@@ -1,0 +1,105 @@
+/* Inicio */
+/* Texto slider */
+.texto-slider {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40vw;
+}
+
+.texto-slider h1 {
+    font-size: 3vw;
+}
+
+.texto-slider p {
+    font-size: 1.6vw;
+}
+
+
+/* Imagen slider automatica */
+.desplazamiento {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+
+.slider {
+    width: 50%;
+    height: auto;
+	margin: 2%;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	margin: 0;
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/* Resposive */
+@media(max-width: 768px) {
+    /* Inicio */
+    /* Imagen slider automatica */
+    .slider {
+        width: 95%;
+        height: auto;
+        position: relative;
+        bottom: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .desplazamiento {
+        display: block;
+        
+    }
+
+    /* Texto slider */
+    .texto-slider {
+        height: auto;
+        align-items: center;
+        text-align: center;
+        width: auto;
+        position: relative;
+        bottom: 0;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .texto-slider h1 {
+        font-size: 7vw;
+        margin: 0;
+    }
+
+    .texto-slider p {
+        font-size: 5vw;
+    }
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+
+/* TODO */
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+
+
+/* CUERPO */
+body{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* BOTON DE WHATSAPP */
+.float{
+	position:fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 30px;
+	right: 30px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+    z-index:100;
+	transition: all 300ms ease;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  	background-color: black;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+@media(max-width: 768px) {
+	.float{
+		bottom: 15px;
+		right: 20px;
+	}
+	
+}
